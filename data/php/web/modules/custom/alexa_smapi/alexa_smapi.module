@@ -1,0 +1,21 @@
+<?php
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function alexa_smapi_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.alexa_smapi':
+      return t('
+        <h2>Alexa SMAPI Integration for Drupal.</h2>
+        <h3>Instructions</h3>
+        <p>In order to make this integration work you will need an account on the Alexa Developer Console.</p>
+        <p>Due to the way Login with Amazon works with this particular API, you will need to also re-authenticate frequently when updating your skills config from here.</p>
+        <p>Visit <strong>/admin/config/integrations/alexa_smapi</strong> to enter the needed config.</p>
+        <p>For more information on how the underlying SDK works, visit <a href="https://github.com/omissis/php-ask-sdk">https://github.com/omissis/php-ask-sdk</a></p>
+        <p>Remember: this is an <strong>EXPERIMENTAL</strong> module.</p>
+      ');
+  }
+}

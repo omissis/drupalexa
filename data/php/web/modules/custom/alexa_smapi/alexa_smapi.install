@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * @file
+ * Installation functions for Alexa SMAPI module.
+ */
+
+/**
+ * Implements hook_install().
+ */
+function alexa_smapi_install() {
+  // Nothing to do.
+}

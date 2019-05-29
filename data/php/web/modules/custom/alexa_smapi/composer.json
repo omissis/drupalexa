@@ -1,0 +1,24 @@
+{
+    "name": "drupal/alexa_smapi",
+    "description": "alexa_smapi is an experimental PHP sdk for interacting with the alexa skills.",
+    "type": "drupal-module",
+    "homepage": "https://drupal.org/project/alexa_smapi",
+    "authors": [
+        {
+            "name": "Claudio Beatrice (omissis)",
+            "email": "claudi0.beatric3@gmail.com",
+            "homepage": "https://www.drupal.org/u/omissis",
+            "role": "Maintainer"
+        }
+    ],
+    "support": {
+        "issues": "https://drupal.org/project/issues/alexa_smapi",
+        "irc": "irc://irc.freenode.org/drupal-contribute",
+        "source": "https://cgit.drupalcode.org/alexa_smapi"
+    },
+    "license": "GPL-2.0-or-later",
+    "minimum-stability": "dev",
+    "require": {
+        "omissis/php-ask-sdk": "dev-master@dev"
+    }
+}

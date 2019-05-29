@@ -1,0 +1,15 @@
+alexa_smapi.form:
+  path: '/admin/config/integrations/alexa_smapi'
+  defaults:
+    _form: '\Drupal\alexa_smapi\Form\SettingsForm'
+    _title: 'Alexa SMAPI Settings'
+  requirements:
+    _permission: 'administer alexa smapi integration'
+
+alexa_smapi.update_skill_form:
+  path: '/integrations/alexa_smapi/skills/{skillId}'
+  defaults:
+    _title: 'Update drupalexa commerce skill'
+    _form: '\Drupal\alexa_smapi\Form\SkillUpdateForm'
+  requirements:
+    _permission: 'administer alexa smapi integration'

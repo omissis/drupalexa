@@ -1,16 +1,24 @@
 version: "3"
 
 services:
-  php:
-    image: wodby/drupal:$DRUPAL_TAG
-    environment:
-      PHP_FPM_CLEAR_ENV: "no"
+  mariadb:
+    ports:
+      - "3306:3306"
     volumes:
-      - codebase:/var/www/html
+      - database:/var/lib/mysql:rw
+  php:
+    #image: wodby/drupal:$DRUPAL_TAG
+    #environment:
+    #  PHP_FPM_CLEAR_ENV: "no"
+    volumes:
+      - ./data/php:/var/www/html:rw,cached
+      #- codebase:/var/www/html
 
   nginx:
     volumes:
-      - codebase:/var/www/html
+      - ./data/php:/var/www/html:rw,cached
+      #- codebase:/var/www/html
 
 volumes:
   codebase:
+  database:

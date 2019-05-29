@@ -1,0 +1,13 @@
+system.admin_config.third_parties:
+  title: 'Third-party integrations'
+  description: 'Settings for third-party integration ssettings'
+  parent: system.admin_config
+  route_name: system.admin_config
+  weight: 100
+
+alexa_smapi.admin:
+  title: 'Alexa SMAPI module settings'
+  description: 'Control the Alexa Skill Management API integration'
+  parent: system.admin_config.third_parties
+  route_name: alexa_smapi.form
+  weight: 100

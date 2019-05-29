@@ -1,0 +1,7 @@
+name: Alexa SMAPI Module
+description: Integrates Alexa Skill Management API into Drupal.
+package: Custom
+type: module
+version: 1.0
+core: 8.x
+configure: alexa_smapi.form
