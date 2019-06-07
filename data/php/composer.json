@@ -21,6 +21,10 @@
         "asset-packagist": {
             "type": "composer",
             "url": "https://asset-packagist.org"
+        },
+        "drupal-alexa-smapi": {
+            "type": "vcs",
+            "url": "https://github.com/omissis/drupal-alexa-smapi"
         }
     },
     "config": {
@@ -31,8 +35,10 @@
         "ext-curl": "*",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
+        "doctrine/common": "^2.10",
         "drupal-composer/drupal-scaffold": "^2.5",
         "drupal/admin_toolbar": "~1.0",
+        "drupal/alexa_smapi": "dev-master",
         "drupal/commerce": "~2.0",
         "drupal/console": "^1.0.2",
         "drupal/core": "^8.6.0",
@@ -41,7 +47,11 @@
         "drupal/token": "~1.0",
         "drupalcommerce/commerce_base": "dev-8.x-1.x",
         "drush/drush": "dev-master",
+        "kriswallsmith/buzz": "^1.0",
+        "nyholm/psr7": "^1.1",
         "oomphinc/composer-installers-extender": "^1.1",
+        "symfony/property-access": "^4.3",
+        "symfony/property-info": "^4.3",
         "webflo/drupal-finder": "^1.0",
         "webmozart/path-util": "^2.3"
     },
